@@ -164,6 +164,7 @@ button:hover{
     .card8 .author_img{
         background-color:rgb(255, 136, 0)
     }   
+     .card_title_and_desc:hover a{color:blue;}
 
 
 
