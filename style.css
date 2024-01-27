@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cardholder{
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2.5rem;
+}
+.large_container{
+    margin-top: 2rem;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 75vw;
+    height: 100vh;
+    margin: 5% auto;
+ /* background-color: rgb(45, 43, 40); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ /* color: white; */
+}
+.headtitle,.headdescription{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-tracks: center; */
+    /* margin-top: 5%; */
+}
+.headtitle{
+    font-size: 1.5rem;
+    margin-bottom: 1%;
+    margin-top: -5%;
+}
+.headdescription{
+    color: rgb(62, 62, 62);
+    font-size: 1.2rem;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+/* _____________________card1__________start________ */
+.card1{
+margin-top: 5%;
+/* border: 2px solid grey; */
+border-radius: 25px;
+border-bottom-left-radius: 2.2rem;
+width:20rem;
+/* max-width: 15rem; */
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.card_img{
+    position: relative;
+    overflow: hidden;
+    height: 18rem;
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+    /* width: 15rem; */
+}
+.imgincard{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width:100%;
+}
+.card1:hover .imgincard{
+    transform: scale(1.2);
+    transition-duration: 500ms;
+}
+.card_title_and_desc{
+    margin-top: 0.8rem;
+    padding-left: 5%;
+    padding-top: 2%;
+
+}
+.card_title_and_desc a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 2;
+}
+.author_and_niche{
+    margin-top:15% ;
+    display: flex;
+    justify-content: space-around;   
+    /* border: 2px solid black; */
+    margin-bottom: -4%;
+    padding: 2px;
+    padding-right: 4px;
+}
+.author_img{
+    position: relative;
+    height: 4.5rem;
+    width: 4.5rem;
+    background-color:coral;
+    border-radius: 50%;
+    overflow: hidden;
+    bottom:0.9rem ;
+}
+.author_img img{
+    position: absolute;
+
+}
+.authorname{
+   font-size: 0.8rem;
+   margin-left: 2%;
+   position: relative;
+   bottom: 0.45rem;
+    
+}
+button{
+    font-size: 0.7rem;
+    padding: 0.15rem;
+    border-radius: 5px;
+    border: 2px solid rgb(109, 85, 85);
+}
+button:hover{
+    background-color: rgb(187, 187, 144);
+    font-style: italic;
+    transition-duration: 500ms;
+}
+/* _____________________card1__________END________ */
+
+
+/* ____________card 2_________ STARTS __________*/
+.mastercard{
+    margin-top: 5%;
+   
+    border-radius: 25px;
+    border-bottom-left-radius: 2.2rem;
+    width:20rem;
+   
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+    .mastercard:hover .imgincard{
+        transform: scale(1.2);
+        transition-duration: 500ms;
+    }
+    .card2img   {
+        background-color:rgb(13, 255, 0)
+    } 
+    .card3 .author_img{
+        background-color:rgb(0, 149, 255)
+    }
+    .card4 .author_img{
+        background-color:blue
+    }
+    .card5 .author_img{
+        background-color:rgb(210, 106, 38)
+    }
+    .card6 .author_img{
+        background-color:rgb(43, 43, 80)
+    }
+    .card7 .author_img{
+        background-color:rgb(255, 0, 149)
+    }
+    .card8 .author_img{
+        background-color:rgb(255, 136, 0)
+    }   
+
+
+
+    /* ______________________media queries___________________ */
+    @media(max-width:850px){
+        .cardholder{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+    @media(max-width:1080px){
+        .cardholder{
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
